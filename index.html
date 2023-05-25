@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-O-Counter</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>TEXT-O-COUNTER</h1>
+    </div>
+    <section class="input" style="margin-left: 15%; margin-right: 15%; margin-top: 4%; margin-bottom: 4%;">
+        <div class="input-box">
+            <textarea class="input-text" id="txt"></textarea>
+        </div>
+    </section>
+    <section class="output">
+        <div class="first-row">
+            <div class="output-stat">
+                <span class="attributes">Words</span><br><span class="stat">0</span>
+            </div>
+            <div class="output-stat">
+                <span class="attributes">Characters</span><br><span class="stat">0</span>
+            </div>
+            <div class="output-stat">
+                <span class="attributes">Uppercase</span><br><span class="stat">0</span>
+            </div>
+            <div class="output-stat">
+                <span class="attributes">Lowercase</span><br><span class="stat">0</span>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="output-stat">
+                <span class="attributes">Digits</span><br><span class="stat">0</span>
+            </div>
+            <div class="output-stat">
+                <span class="attributes">Vowels</span><br><span class="stat">0</span>
+            </div>
+            <div class="output-stat">
+                <span class="attributes">Consonants</span><br><span class="stat">0</span>
+            </div>
+            <div class="output-stat">
+                <span class="attributes">Sentences</span><br><span class="stat">0</span>
+            </div>
+            <div class="output-stat">
+                <span class="attributes">Spaces</span><br><span class="stat" id="spaces">0</span>
+            </div>
+        </div>
+        <div class="text-button">
+            <div>
+                <button class="btn" onclick="copyText()" style="background-color: #009933">Copy Text</button>
+            </div>
+            <div>
+                <button class="btn" onclick="clearText()" style="background-color: #d9534f">Clear Text</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
